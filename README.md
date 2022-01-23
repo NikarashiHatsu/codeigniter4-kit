@@ -19,3 +19,9 @@ The package includes:
 - jQuery
 - Simplelightbox
 - Sweetalert2
+
+## Getting started
+- Clone this project.
+- Run `composer install`.
+- Run `npm install`.
+- Run `npm run dev` or `npm run watch` to compile assets.
