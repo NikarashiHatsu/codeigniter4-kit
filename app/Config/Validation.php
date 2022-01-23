@@ -40,4 +40,15 @@ class Validation
     //--------------------------------------------------------------------
     // Rules
     //--------------------------------------------------------------------
+    public $register = [
+        'name' => 'required|min_length[6]|max_length[255]',
+        'username' => 'required|min_length[6]|max_length[255]',
+        'password' => 'required|min_length[6]|max_length[255]',
+        'password_confirmation' => 'required|min_length[6]|max_length[255]|matches[password]',
+    ];
+
+    public $login = [
+        'username' => 'required|min_length[6]|max_length[255]',
+        'password' => 'required|min_length[6]|max_length[255]',
+    ];
 }
