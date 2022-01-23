@@ -9,7 +9,7 @@ starting packages, so hopefully this starter kit has a good value. Any PRs
 regarding improvement to the starting kit is welcome.
 
 To-do:
-[ ] Basic Authentication
+- [ ] Basic Authentication
 
 The package includes:
 - Laravel mix (to mimic Laravel's asset compiling)
