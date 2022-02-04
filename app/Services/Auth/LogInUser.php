@@ -11,8 +11,12 @@ class LogInUser {
         $user = new User();
         $user = $user->where($username, $request->getPost($username));
 
-        if ($user->countAll() == 0) {
+        if ($user->countAllResults() == 0) {
             throw new \Exception('User not found.');
+        }
+
+        if (!password_verify($request->getPost('password'), $user->asObject()->first()->password)) {
+            throw new \Exception("Password is incorrect");
         }
 
         $user = $user->asObject()->first();
