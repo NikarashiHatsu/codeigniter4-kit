@@ -15,11 +15,11 @@ class LogInUser {
             throw new \Exception('User not found.');
         }
 
-        if (!password_verify($request->getPost('password'), $user->asObject()->first()->password)) {
+        if (!password_verify($request->getPost('password'), $user->where($username, $request->getPost($username))->first()->password)) {
             throw new \Exception("Password is incorrect");
         }
 
-        $user = $user->asObject()->first();
+        $user = $user->where($username, $request->getPost($username))->first();
         unset($user->password);
 
         session()->set('user', $user);
