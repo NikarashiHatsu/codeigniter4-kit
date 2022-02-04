@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="<?= env('app.theme') ?>">
 
 <head>
     <meta charset="UTF-8">

@@ -21,6 +21,8 @@
 #--------------------------------------------------------------------
 
 # app.baseURL = ''
+# app.name = ''
+# app.theme = ''  # based on DaisyUI theme
 # app.forceGlobalSecureRequests = false
 
 # app.sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler'
