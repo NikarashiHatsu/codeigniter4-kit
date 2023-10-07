@@ -11,7 +11,7 @@
   "devDependencies": {
     "alpinejs": "^3.8.1",
     "autoprefixer": "^10.4.2",
-    "daisyui": "^1.24.3",
+    "daisyui": "^3.9.2",
     "jquery": "^3.6.0",
     "laravel-mix": "^6.0.41",
     "lodash": "^4.17.21",
